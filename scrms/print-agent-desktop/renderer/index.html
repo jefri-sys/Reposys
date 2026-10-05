@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Reposys Print Agent</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f5f7; margin: 0; padding: 0; display: flex; flex-direction: column; height: 100vh; }
+    .header { background-color: #ffffff; padding: 16px 24px; border-bottom: 1px solid #e2e8f0; font-size: 18px; font-weight: 600; color: #1e293b; }
+    .container { flex: 1; padding: 24px; overflow-y: auto; }
+    .step { display: none; }
+    .step.active { display: block; }
+    .input-group { margin-bottom: 16px; }
+    .input-group label { display: block; margin-bottom: 8px; font-weight: 500; color: #475569; }
+    .input-group input[type="text"] { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 14px; box-sizing: border-box; }
+    .helper-text { font-size: 12px; color: #64748b; margin-top: 4px; line-height: 1.4; }
+    .btn { padding: 10px 16px; background-color: #2563eb; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: 500; }
+    .btn:hover { background-color: #1d4ed8; }
+    .btn:disabled { background-color: #94a3b8; cursor: not-allowed; }
+    .btn-secondary { background-color: #e2e8f0; color: #1e293b; }
+    .btn-secondary:hover { background-color: #cbd5e1; }
+    .footer { padding: 16px 24px; border-top: 1px solid #e2e8f0; background-color: #f8fafc; display: flex; justify-content: flex-end; gap: 12px; }
+    .spinner { display: inline-block; width: 24px; height: 24px; border: 3px solid #e2e8f0; border-top-color: #2563eb; border-radius: 50%; animation: spin 1s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .center { text-align: center; }
+    .radio-group label { display: block; margin-bottom: 8px; font-size: 14px; color: #334155; }
+    .error-msg { color: #ef4444; font-size: 13px; margin-top: 8px; }
+    .success-msg { color: #10b981; font-size: 13px; margin-top: 8px; }
+    
+    /* Status Dashboard */
+    #dashboard { display: none; }
+    .status-card { background: white; padding: 20px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 16px; }
+    .status-row { display: flex; justify-content: space-between; margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #f1f5f9; }
+    .status-row:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .status-label { color: #64748b; font-size: 14px; }
+    .status-val { color: #0f172a; font-size: 14px; font-weight: 500; }
+    .badge { padding: 4px 8px; border-radius: 99px; font-size: 12px; font-weight: 600; }
+    .badge-green { background: #dcfce7; color: #166534; }
+    .badge-red { background: #fee2e2; color: #991b1b; }
+  </style>
+</head>
+<body>
+  <div class="header" id="header-title">Print Agent Setup</div>
+  
+  <div class="container" id="wizard">
+    <!-- Step 1 -->
+    <div class="step active" id="step1">
+      <h3>Step 1: Enter Registration Token</h3>
+      <div class="input-group">
+        <label>Registration Token</label>
+        <input type="text" id="regToken" placeholder="Paste your token here..." />
+        <div class="helper-text">Generate this token from your Reposys Admin Dashboard under Printer Management &rarr; Generate Agent Token</div>
+      </div>
+    </div>
+    
+    <!-- Step 2 -->
+    <div class="step" id="step2">
+      <h3>Step 2: Detecting printers</h3>
+      <div class="center" style="margin-top: 40px;">
+        <div class="spinner"></div>
+        <p style="margin-top: 16px; color: #475569;">Detecting installed printers...</p>
+      </div>
+    </div>
+    
+    <!-- Step 3 -->
+    <div class="step" id="step3">
+      <h3>Step 3: Select default printer</h3>
+      <div class="radio-group" id="printerList">
+        <!-- populated dynamically -->
+      </div>
+    </div>
+    
+    <!-- Step 4 -->
+    <div class="step" id="step4">
+      <h3>Step 4: Verify Printer</h3>
+      <p style="font-size: 14px; color: #475569; margin-bottom: 16px;">Click "Test Print" to verify your default printer works before registering.</p>
+      <button class="btn btn-secondary" id="btnTestPrint">Test Print</button>
+      <div id="testPrintRes4" style="margin-top: 16px;"></div>
+    </div>
+    
+    <!-- Step 5 -->
+    <div class="step" id="step5">
+      <h3>Step 5: Registering with Reposys</h3>
+      <div class="center" style="margin-top: 40px;">
+        <div class="spinner" id="regSpinner"></div>
+        <p id="regText" style="margin-top: 16px; color: #475569;">Registering...</p>
+        <p id="regWaitMsg" style="margin-top: 8px; font-size: 12px; color: #64748b; display: none;">
+          Please wait... Waking up the cloud server can take up to 60 seconds.
+        </p>
+        <div id="regError" class="error-msg"></div>
+      </div>
+    </div>
+    
+    <!-- Step 6 -->
+    <div class="step" id="step6">
+      <h3>Complete</h3>
+      <div class="status-card center">
+        <h2 style="color: #10b981; margin-top:0;">Agent registered successfully!</h2>
+        <p>This agent is now visible in your Reposys Admin Dashboard.</p>
+        <div style="background: #f1f5f9; padding: 12px; border-radius: 4px; margin-top: 16px;">
+          <span style="font-size: 12px; color: #64748b; display: block; margin-bottom: 4px;">Agent ID</span>
+          <span id="finalAgentId" style="font-weight: bold; font-family: monospace; font-size: 16px;"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer" id="wizard-footer">
+    <button class="btn btn-secondary" id="btnBack" style="display: none;">Back</button>
+    <button class="btn" id="btnNext">Next</button>
+  </div>
+
+  <div class="container" id="dashboard">
+    <div class="status-card">
+      <div class="status-row">
+        <span class="status-label">Status</span>
+        <span class="status-val badge" id="dashStatus"></span>
+      </div>
+      <div class="status-row">
+        <span class="status-label">Agent ID</span>
+        <span class="status-val" id="dashAgentId"></span>
+      </div>
+      <div class="status-row">
+        <span class="status-label">Default Printer</span>
+        <span class="status-val" id="dashPrinter"></span>
+      </div>
+      <div class="status-row">
+        <span class="status-label">Backend</span>
+        <span class="status-val" id="dashBackend"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Rounded blue background -->
+  <rect width="512" height="512" rx="128" fill="#1D4ED8"/>
+  
+  <!-- White printer icon -->
+  <!-- Top Paper -->
+  <path d="M192 128H280" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"/>
+  <path d="M192 128V208H320V160" stroke="#FFFFFF" stroke-width="24" stroke-linejoin="round"/>
+  <path d="M280 128L320 160" stroke="#FFFFFF" stroke-width="24" stroke-linejoin="round"/>
+  <path d="M280 128V160H320" stroke="#FFFFFF" stroke-width="24" stroke-linejoin="round"/>
+  
+  <!-- Main Body -->
+  <rect x="106" y="208" width="300" height="150" rx="40" stroke="#FFFFFF" stroke-width="24"/>
+  <!-- LED indicator -->
+  <rect x="310" y="250" width="40" height="16" rx="8" fill="#FFFFFF"/>
+  
+  <!-- Bottom Paper -->
+  <path d="M170 320V410H342V320" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Lines on bottom paper -->
+  <line x1="200" y1="355" x2="312" y2="355" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round"/>
+  <line x1="200" y1="380" x2="280" y2="380" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round"/>
+</svg>

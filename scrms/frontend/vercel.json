@@ -1,0 +1,45 @@
+{
+  "build": {
+    "env": {
+      "VITE_VAPID_PUBLIC_KEY": "BAkk25YiXfLkbbnkk8tXHE0-5j18vQHbDCw_HtN8au1FLVscnNbMzSp512o1bCr5b_qkjFuPSmnAuVE3hB2ooTg"
+    }
+  },
+  "headers": [
+    {
+      "source": "/sw.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        },
+        {
+          "key": "Service-Worker-Allowed",
+          "value": "/"
+        }
+      ]
+    },
+    {
+      "source": "/manifest.json",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://scrms-ready.onrender.com/api/$1"
+    },
+    {
+      "source": "/socket.io/:path*",
+      "destination": "https://scrms-ready.onrender.com/socket.io/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
