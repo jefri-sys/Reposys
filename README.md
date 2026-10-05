@@ -1,11 +1,12 @@
-# 🖨️ REPOSYS — Reprography Automation System
+#  REPOSYS — Reprography Automation System
 
 <p align="center">
   <strong>Upload. Track. Print. No Waiting.</strong>
 </p>
 
 <p align="center">
-  A full-stack platform for automated reprography, document management, payments, queue management, and real-time order tracking.
+  A full-stack platform for automated reprography, document management,
+  payments, queue management, and real-time order tracking.
 </p>
 
 <p align="center">
@@ -49,7 +50,7 @@ From **uploading a document and placing an order** to **queue processing, live s
 
 # ✨ Key Features
 
-### 👨‍🎓 Student & Faculty
+## 👨‍🎓 Student & Faculty
 
 - 📄 Upload documents
 - 🖨️ Print & photocopy orders
@@ -71,7 +72,7 @@ From **uploading a document and placing an order** to **queue processing, live s
 
 ---
 
-### 🧑‍💼 Counter Staff
+## 🧑‍💼 Counter Staff
 
 - 📊 Staff dashboard
 - 🔄 Live order queue
@@ -87,7 +88,7 @@ From **uploading a document and placing an order** to **queue processing, live s
 
 ---
 
-### 👨‍💻 Administration
+## 👨‍💻 Administration
 
 - 📊 Analytics dashboard
 - 💰 Revenue monitoring
@@ -105,9 +106,9 @@ From **uploading a document and placing an order** to **queue processing, live s
 
 ---
 
-### 👤 Guest Mode
+## 👤 Guest Mode
 
-REPOSYS also supports guest users who can access selected services without creating a permanent account.
+REPOSYS supports guest users who can access selected services without creating a permanent account.
 
 - 🔐 Temporary guest authentication
 - 📄 Document submission
@@ -121,28 +122,28 @@ REPOSYS also supports guest users who can access selected services without creat
 # 🔄 How REPOSYS Works
 
 ```text
-        👤 USER
-           │
-           ▼
-   📄 Upload Document
-           │
-           ▼
-     🛒 Create Order
-           │
-           ▼
-     💳 Make Payment
-           │
-           ▼
-      ⚡ Queue System
-           │
-           ▼
-   🧑‍💼 Staff Processing
-           │
-           ▼
-      🖨️ Printing
-           │
-           ▼
-    📦 Order Completed
-           │
-           ▼
-      🔐 OTP Pickup
+                 👤 USER
+                    │
+                    ▼
+             📄 Upload Document
+                    │
+                    ▼
+               🛒 Create Order
+                    │
+                    ▼
+               💳 Make Payment
+                    │
+                    ▼
+               ⚡ Queue System
+                    │
+                    ▼
+             🧑‍💼 Staff Processing
+                    │
+                    ▼
+                 🖨️ Printing
+                    │
+                    ▼
+              📦 Order Completed
+                    │
+                    ▼
+                🔐 OTP Pickup
