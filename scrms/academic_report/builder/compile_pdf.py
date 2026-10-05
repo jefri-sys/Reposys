@@ -1145,7 +1145,7 @@ NODE_ENV=production
 FRONTEND_URL=https://reposys-client.vercel.app
 
 # Database Connection URI
-MONGODB_URI=mongodb+srv://admin:securepass@cluster0.mongodb.net/reposys?retryWrites=true&amp;w=majority
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/reposys?retryWrites=true&amp;w=majority
 
 # Cryptographic Token Secrets
 JWT_SECRET=c9b20891d8654a60b0ad8a87b419
