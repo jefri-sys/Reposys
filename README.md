@@ -57,7 +57,7 @@ From **uploading a document and placing an order** to **queue processing, live s
 
 ### Landing Page
 
-<img src="./docs/screenshots/01-landing-page.png.png" alt="REPOSYS Landing Page" width="100%">
+<img src="./docs/screenshots/01-landing-page" alt="REPOSYS Landing Page" width="100%">
 
 </td>
 <td width="50%">
@@ -164,7 +164,6 @@ From **uploading a document and placing an order** to **queue processing, live s
 </td>
 <td></td>
 </tr>
-
 </table>
 
 ---
