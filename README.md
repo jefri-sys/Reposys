@@ -1,4 +1,4 @@
-#  REPOSYS — Reprography Automation System
+# 🖨️ REPOSYS — Reprography Automation System
 
 <p align="center">
   <strong>Upload. Track. Print. No Waiting.</strong>
@@ -47,7 +47,165 @@ From **uploading a document and placing an order** to **queue processing, live s
 > **Upload. Track. Print. No Waiting.**
 
 ---
+# 📸 Screenshots
 
+## 🖥️ Web Application
+
+<table>
+<tr>
+<td width="50%">
+
+### Landing Page
+
+<img src="./docs/screenshots/01-landing-page.png.png" alt="REPOSYS Landing Page" width="100%">
+
+</td>
+<td width="50%">
+
+### Login
+
+<img src="./docs/screenshots/02-login" alt="REPOSYS Login" width="100%">
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+### Registration
+
+<img src="./docs/screenshots/03-register" alt="REPOSYS Registration" width="100%">
+
+</td>
+<td width="50%">
+
+### Guest Mode
+
+<img src="./docs/screenshots/04-guest-mode" alt="REPOSYS Guest Mode" width="100%">
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+### User Dashboard
+
+<img src="./docs/screenshots/05-user-dashboard" alt="REPOSYS User Dashboard" width="100%">
+
+</td>
+<td width="50%">
+
+### Live Order Tracking
+
+<img src="./docs/screenshots/06-order-tracking" alt="REPOSYS Live Order Tracking" width="100%">
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+### My Orders
+
+<img src="./docs/screenshots/07-my-orders" alt="REPOSYS My Orders" width="100%">
+
+</td>
+<td width="50%">
+
+### Staff Console
+
+<img src="./docs/screenshots/09-staff-console" alt="REPOSYS Staff Console" width="100%">
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+### Admin Dashboard
+
+<img src="./docs/screenshots/10-admin-dashboard" alt="REPOSYS Admin Dashboard" width="100%">
+
+</td>
+<td width="50%">
+
+### Admin Pricing
+
+<img src="./docs/screenshots/11-admin-pricing" alt="REPOSYS Admin Pricing" width="100%">
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+### Admin Tools
+
+<img src="./docs/screenshots/12-admin-tools" alt="REPOSYS Admin Tools" width="100%">
+
+</td>
+<td width="50%">
+
+### Print Automation
+
+<img src="./docs/screenshots/13-print-automation" alt="REPOSYS Print Automation" width="100%">
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+### Printer Management
+
+<img src="./docs/screenshots/14-printer-management" alt="REPOSYS Printer Management" width="100%">
+
+</td>
+<td></td>
+</tr>
+
+</table>
+
+---
+
+## 📱 Mobile & PWA
+
+<p align="center">
+
+<img src="./docs/screenshots/15-mobile-dashboard"
+     alt="REPOSYS Mobile Dashboard"
+     width="22%">
+
+<img src="./docs/screenshots/16-mobile-orders"
+     alt="REPOSYS Mobile Orders"
+     width="22%">
+
+<img src="./docs/screenshots/17-mobile-tracking"
+     alt="REPOSYS Mobile Tracking"
+     width="22%">
+
+<img src="./docs/screenshots/18-mobile-friends"
+     alt="REPOSYS Mobile Friends"
+     width="22%">
+
+</p>
+
+<p align="center">
+
+<img src="./docs/screenshots/19-mobile-wallet"
+     alt="REPOSYS Mobile Wallet"
+     width="22%">
+
+<img src="./docs/screenshots/20-mobile-settings"
+     alt="REPOSYS Mobile Settings"
+     width="22%">
+
+<img src="./docs/screenshots/21-mobile-ai-assistant"
+     alt="REPOSYS AI Assistant"
+     width="22%">
+
+</p>
 # ✨ Key Features
 
 ## 👨‍🎓 Student & Faculty
