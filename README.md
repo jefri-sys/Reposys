@@ -1,4 +1,4 @@
-# 🖨️ REPOSYS — Reprography Automation System
+#  REPOSYS — Reprography Automation System
 
 <p align="center">
   <strong>Upload. Track. Print. No Waiting.</strong>
@@ -57,14 +57,18 @@ From **uploading a document and placing an order** to **queue processing, live s
 
 ### Landing Page
 
-<img src="./docs/screenshots/01-landing-page" alt="REPOSYS Landing Page" width="100%">
+<img src="./docs/screenshots/01-landing-page.png"
+     alt="REPOSYS Landing Page"
+     width="100%">
 
 </td>
 <td width="50%">
 
 ### Login
 
-<img src="./docs/screenshots/02-login" alt="REPOSYS Login" width="100%">
+<img src="./docs/screenshots/02-login.png"
+     alt="REPOSYS Login"
+     width="100%">
 
 </td>
 </tr>
@@ -74,14 +78,18 @@ From **uploading a document and placing an order** to **queue processing, live s
 
 ### Registration
 
-<img src="./docs/screenshots/03-register" alt="REPOSYS Registration" width="100%">
+<img src="./docs/screenshots/03-register.png"
+     alt="REPOSYS Registration"
+     width="100%">
 
 </td>
 <td width="50%">
 
 ### Guest Mode
 
-<img src="./docs/screenshots/04-guest-mode" alt="REPOSYS Guest Mode" width="100%">
+<img src="./docs/screenshots/04-guest-mode.png"
+     alt="REPOSYS Guest Mode"
+     width="100%">
 
 </td>
 </tr>
@@ -91,14 +99,18 @@ From **uploading a document and placing an order** to **queue processing, live s
 
 ### User Dashboard
 
-<img src="./docs/screenshots/05-user-dashboard" alt="REPOSYS User Dashboard" width="100%">
+<img src="./docs/screenshots/05-user-dashboard.png"
+     alt="REPOSYS User Dashboard"
+     width="100%">
 
 </td>
 <td width="50%">
 
 ### Live Order Tracking
 
-<img src="./docs/screenshots/06-order-tracking" alt="REPOSYS Live Order Tracking" width="100%">
+<img src="./docs/screenshots/06-order-tracking.png"
+     alt="REPOSYS Live Order Tracking"
+     width="100%">
 
 </td>
 </tr>
@@ -108,14 +120,18 @@ From **uploading a document and placing an order** to **queue processing, live s
 
 ### My Orders
 
-<img src="./docs/screenshots/07-my-orders" alt="REPOSYS My Orders" width="100%">
+<img src="./docs/screenshots/07-my-orders.png"
+     alt="REPOSYS My Orders"
+     width="100%">
 
 </td>
 <td width="50%">
 
 ### Staff Console
 
-<img src="./docs/screenshots/09-staff-console" alt="REPOSYS Staff Console" width="100%">
+<img src="./docs/screenshots/09-staff-console.png"
+     alt="REPOSYS Staff Console"
+     width="100%">
 
 </td>
 </tr>
@@ -125,14 +141,18 @@ From **uploading a document and placing an order** to **queue processing, live s
 
 ### Admin Dashboard
 
-<img src="./docs/screenshots/10-admin-dashboard" alt="REPOSYS Admin Dashboard" width="100%">
+<img src="./docs/screenshots/10-admin-dashboard.png"
+     alt="REPOSYS Admin Dashboard"
+     width="100%">
 
 </td>
 <td width="50%">
 
 ### Admin Pricing
 
-<img src="./docs/screenshots/11-admin-pricing" alt="REPOSYS Admin Pricing" width="100%">
+<img src="./docs/screenshots/11-admin-pricing.png"
+     alt="REPOSYS Admin Pricing"
+     width="100%">
 
 </td>
 </tr>
@@ -142,14 +162,18 @@ From **uploading a document and placing an order** to **queue processing, live s
 
 ### Admin Tools
 
-<img src="./docs/screenshots/12-admin-tools" alt="REPOSYS Admin Tools" width="100%">
+<img src="./docs/screenshots/12-admin-tools.png"
+     alt="REPOSYS Admin Tools"
+     width="100%">
 
 </td>
 <td width="50%">
 
 ### Print Automation
 
-<img src="./docs/screenshots/13-print-automation" alt="REPOSYS Print Automation" width="100%">
+<img src="./docs/screenshots/13-print-automation.png"
+     alt="REPOSYS Print Automation"
+     width="100%">
 
 </td>
 </tr>
@@ -159,7 +183,9 @@ From **uploading a document and placing an order** to **queue processing, live s
 
 ### Printer Management
 
-<img src="./docs/screenshots/14-printer-management" alt="REPOSYS Printer Management" width="100%">
+<img src="./docs/screenshots/14-printer-management.png"
+     alt="REPOSYS Printer Management"
+     width="100%">
 
 </td>
 <td></td>
@@ -172,19 +198,19 @@ From **uploading a document and placing an order** to **queue processing, live s
 
 <p align="center">
 
-<img src="./docs/screenshots/15-mobile-dashboard"
+<img src="https://raw.githubusercontent.com/jefri-sys/Reposys/main/docs/screenshots/15-mobile-dashboard.png"
      alt="REPOSYS Mobile Dashboard"
      width="22%">
 
-<img src="./docs/screenshots/16-mobile-orders"
+<img src="https://raw.githubusercontent.com/jefri-sys/Reposys/main/docs/screenshots/16-mobile-orders.png"
      alt="REPOSYS Mobile Orders"
      width="22%">
 
-<img src="./docs/screenshots/17-mobile-tracking"
+<img src="https://raw.githubusercontent.com/jefri-sys/Reposys/main/docs/screenshots/17-mobile-tracking.png"
      alt="REPOSYS Mobile Tracking"
      width="22%">
 
-<img src="./docs/screenshots/18-mobile-friends"
+<img src="https://raw.githubusercontent.com/jefri-sys/Reposys/main/docs/screenshots/18-mobile-friends.png"
      alt="REPOSYS Mobile Friends"
      width="22%">
 
@@ -192,15 +218,15 @@ From **uploading a document and placing an order** to **queue processing, live s
 
 <p align="center">
 
-<img src="./docs/screenshots/19-mobile-wallet"
+<img src="https://raw.githubusercontent.com/jefri-sys/Reposys/main/docs/screenshots/19-mobile-wallet.png"
      alt="REPOSYS Mobile Wallet"
      width="22%">
 
-<img src="./docs/screenshots/20-mobile-settings"
+<img src="https://raw.githubusercontent.com/jefri-sys/Reposys/main/docs/screenshots/20-mobile-settings.png"
      alt="REPOSYS Mobile Settings"
      width="22%">
 
-<img src="./docs/screenshots/21-mobile-ai-assistant"
+<img src="https://raw.githubusercontent.com/jefri-sys/Reposys/main/docs/screenshots/21-mobile-ai-assistant.png"
      alt="REPOSYS AI Assistant"
      width="22%">
 
