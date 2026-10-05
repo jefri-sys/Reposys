@@ -1,4 +1,4 @@
-# 🖨️ REPOSYS — Reprography Automation System
+#  REPOSYS — Reprography Automation System
 
 <p align="center">
   <strong>Upload. Track. Print. No Waiting.</strong>
